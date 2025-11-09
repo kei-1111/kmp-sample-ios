@@ -1,26 +1,22 @@
 //
-//  ContentView.swift
+//  HomeScreen.swift
 //  KmpSampleIOS
 //
 //  Created by 犬飼啓太郎 on 2025/11/08.
 //
 
+import Home
 import SwiftUI
 
-struct ContentView: View {
-    let hoge: String
+struct HomeView: View {
     
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text(hoge)
+            Text("Hello home")
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView(hoge: "HOGE")
 }

@@ -1,0 +1,15 @@
+{
+  "originHash" : "8890b9a0541be1c6dfa3db9d2677d73c37293401d633e2eb33ffd0d6e45f763c",
+  "pins" : [
+    {
+      "identity" : "kmp-sample-library",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kei-1111/kmp-sample-library",
+      "state" : {
+        "revision" : "48ef01b0441a9bf267c5f5ad89b2ec43edbf4f47",
+        "version" : "1.2.0"
+      }
+    }
+  ],
+  "version" : 3
+}
