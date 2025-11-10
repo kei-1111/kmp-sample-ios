@@ -18,4 +18,8 @@ class HomeViewModelObserver: ObservableObject {
             self.state = newState
         }
     }
+
+    func onAction(_ action: HomeUiAction) {
+        viewModel.onAction(action: action)
+    }
 }
