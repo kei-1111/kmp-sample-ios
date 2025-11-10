@@ -9,7 +9,7 @@ import Shared
 import SwiftUI
 
 @MainActor
-class HomeViewModelObserver: ObservableObject {
+class HomeViewModelWrapper: ObservableObject {
     var viewModel: HomeViewModel = ViewModelProvider.shared.provideHomeViewModel()
     @Published var state: HomeUiState = HomeUiStateInit()
 

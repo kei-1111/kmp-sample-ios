@@ -9,12 +9,12 @@ import Shared
 import SwiftUI
 
 struct HomeScreen: View {
-    @StateObject private var observer = HomeViewModelObserver()
+    @StateObject private var wrapper = HomeViewModelWrapper()
 
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                switch observer.state {
+                switch wrapper.state {
                 case is HomeUiStateInit:
                     Spacer()
                     Text("Welcome to Home Screen")
@@ -39,7 +39,7 @@ struct HomeScreen: View {
                                 MarsPropertyCardView(
                                     marsProperty: property,
                                     onClick: {
-                                        observer.onAction(
+                                        wrapper.onAction(
                                             HomeUiActionOnClickMarsPropertyCard(marsProperty: property)
                                         )
                                     }
@@ -53,14 +53,14 @@ struct HomeScreen: View {
                     .sheet(isPresented: Binding(
                         get: { stable.selectedPropertyUiModel != nil },
                         set: { if !$0 {
-                            observer.onAction(HomeUiActionOnDismissMarsPropertyDetailDialog())
+                            wrapper.onAction(HomeUiActionOnDismissMarsPropertyDetailDialog())
                         }}
                     )) {
                         if let property = stable.selectedPropertyUiModel {
                             MarsPropertyDetailBottomSheet(
                                 marsProperty: property,
                                 onDismiss: {
-                                    observer.onAction(HomeUiActionOnDismissMarsPropertyDetailDialog())
+                                    wrapper.onAction(HomeUiActionOnDismissMarsPropertyDetailDialog())
                                 }
                             )
                         }
@@ -88,6 +88,6 @@ struct HomeScreen: View {
             .navigationTitle("Mars Photos")
             .navigationBarTitleDisplayMode(.large)
         }
-        .task { await observer.startObserving() }
+        .task { await wrapper.startObserving() }
     }
 }
