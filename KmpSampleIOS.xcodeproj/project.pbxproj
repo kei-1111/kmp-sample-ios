@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA9CDEC22EBFA231000862B6 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = AA9CDEC12EBFA231000862B6 /* Home */; };
-		AA9CDEC42EBFA231000862B6 /* Shared in Frameworks */ = {isa = PBXBuildFile; productRef = AA9CDEC32EBFA231000862B6 /* Shared */; };
+		AA9819D42EC1BBDC00D1BCF0 /* Shared in Frameworks */ = {isa = PBXBuildFile; productRef = AA9819D32EC1BBDC00D1BCF0 /* Shared */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +31,6 @@
 		AAB2BA7E2EBF22C700D6E9EC /* KmpSampleIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KmpSampleIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB2BA8B2EBF22C800D6E9EC /* KmpSampleIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KmpSampleIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB2BA952EBF22C800D6E9EC /* KmpSampleIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KmpSampleIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAB2BAA92EBF23DE00D6E9EC /* Shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Shared.xcframework; path = "../../android-projects/kmp-sample-library/shared/build/XCFrameworks/release/Shared.xcframework"; sourceTree = "<group>"; };
-		AAB2BAB92EBF2BDB00D6E9EC /* KmpSampleLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KmpSampleLibrary.xcframework; path = "../../android-projects/kmp-sample-library/shared/build/XCFrameworks/release/KmpSampleLibrary.xcframework"; sourceTree = "<group>"; };
-		AAB2BAF42EBF734200D6E9EC /* Home.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Home.xcframework; path = "../../android-projects/kmp-sample-library/feature/home/build/XCFrameworks/release/Home.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -60,8 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA9CDEC22EBFA231000862B6 /* Home in Frameworks */,
-				AA9CDEC42EBFA231000862B6 /* Shared in Frameworks */,
+				AA9819D42EC1BBDC00D1BCF0 /* Shared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +83,6 @@
 				AAB2BA802EBF22C700D6E9EC /* KmpSampleIOS */,
 				AAB2BA8E2EBF22C800D6E9EC /* KmpSampleIOSTests */,
 				AAB2BA982EBF22C800D6E9EC /* KmpSampleIOSUITests */,
-				AAB2BAA82EBF23DE00D6E9EC /* Frameworks */,
 				AAB2BA7F2EBF22C700D6E9EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,16 +95,6 @@
 				AAB2BA952EBF22C800D6E9EC /* KmpSampleIOSUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AAB2BAA82EBF23DE00D6E9EC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AAB2BAF42EBF734200D6E9EC /* Home.xcframework */,
-				AAB2BAB92EBF2BDB00D6E9EC /* KmpSampleLibrary.xcframework */,
-				AAB2BAA92EBF23DE00D6E9EC /* Shared.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +117,7 @@
 			);
 			name = KmpSampleIOS;
 			packageProductDependencies = (
-				AA9CDEC12EBFA231000862B6 /* Home */,
-				AA9CDEC32EBFA231000862B6 /* Shared */,
+				AA9819D32EC1BBDC00D1BCF0 /* Shared */,
 			);
 			productName = KmpSampleIOS;
 			productReference = AAB2BA7E2EBF22C700D6E9EC /* KmpSampleIOS.app */;
@@ -219,7 +202,7 @@
 			mainGroup = AAB2BA752EBF22C700D6E9EC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				AA9CDEC02EBFA231000862B6 /* XCRemoteSwiftPackageReference "kmp-sample-library" */,
+				AA9819D22EC1BBDC00D1BCF0 /* XCRemoteSwiftPackageReference "kmp-sample-library" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AAB2BA7F2EBF22C700D6E9EC /* Products */;
@@ -578,25 +561,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AA9CDEC02EBFA231000862B6 /* XCRemoteSwiftPackageReference "kmp-sample-library" */ = {
+		AA9819D22EC1BBDC00D1BCF0 /* XCRemoteSwiftPackageReference "kmp-sample-library" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kei-1111/kmp-sample-library";
 			requirement = {
 				kind = exactVersion;
-				version = 1.2.0;
+				version = 1.3.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA9CDEC12EBFA231000862B6 /* Home */ = {
+		AA9819D32EC1BBDC00D1BCF0 /* Shared */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AA9CDEC02EBFA231000862B6 /* XCRemoteSwiftPackageReference "kmp-sample-library" */;
-			productName = Home;
-		};
-		AA9CDEC32EBFA231000862B6 /* Shared */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AA9CDEC02EBFA231000862B6 /* XCRemoteSwiftPackageReference "kmp-sample-library" */;
+			package = AA9819D22EC1BBDC00D1BCF0 /* XCRemoteSwiftPackageReference "kmp-sample-library" */;
 			productName = Shared;
 		};
 /* End XCSwiftPackageProductDependency section */
