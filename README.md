@@ -89,15 +89,11 @@ kmp-sample-ios/
 - iOS 18.5 以上
 - Swift 5.0 以上
 
-### GitHub Packages の設定
+### 依存関係の取得
 
-本プロジェクトは Swift Package Manager を使用して GitHub Packages から `kmp-sample-library` を取得します。プライベートリポジトリの場合、以下の設定が必要です。
+本プロジェクトは Swift Package Manager を使用して `kmp-sample-library` を取得します。ライブラリは GitHub Releases から XCFramework のバイナリとして配布されており、Xcode が自動的にダウンロードします。
 
-1. GitHub Personal Access Token を作成（`read:packages` 権限が必要）
-2. Xcode の設定で GitHub アカウントを追加：
-   - Xcode > Settings > Accounts
-   - 左下の + ボタンをクリックして GitHub アカウントを追加
-   - Personal Access Token を使用してログイン
+特別な設定は不要で、プロジェクトを開くだけで依存関係が解決されます。
 
 ### ビルド手順
 
