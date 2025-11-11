@@ -6,7 +6,11 @@ Kotlin Multiplatform で作成された火星の不動産情報を表示する i
 
 ## スクリーンショット
 
-<!-- スクリーンショットをここに追加 -->
+一覧画面 | 選択後
+:--: | :--:
+<img src="https://github.com/user-attachments/assets/81cf5409-1bd8-4320-8dd8-afa828491798" width="300" /> | <img src="https://github.com/user-attachments/assets/51b4742b-a888-4e72-ad66-5f8a22ed0b07" width="300" />
+
+
 
 
 ## アーキテクチャ
