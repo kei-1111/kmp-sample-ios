@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA9819D42EC1BBDC00D1BCF0 /* Shared in Frameworks */ = {isa = PBXBuildFile; productRef = AA9819D32EC1BBDC00D1BCF0 /* Shared */; };
+		AA9018B52EC43EF8007846FF /* Shared in Frameworks */ = {isa = PBXBuildFile; productRef = AA9018B42EC43EF8007846FF /* Shared */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA9819D42EC1BBDC00D1BCF0 /* Shared in Frameworks */,
+				AA9018B52EC43EF8007846FF /* Shared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 			);
 			name = KmpSampleIOS;
 			packageProductDependencies = (
-				AA9819D32EC1BBDC00D1BCF0 /* Shared */,
+				AA9018B42EC43EF8007846FF /* Shared */,
 			);
 			productName = KmpSampleIOS;
 			productReference = AAB2BA7E2EBF22C700D6E9EC /* KmpSampleIOS.app */;
@@ -202,7 +202,7 @@
 			mainGroup = AAB2BA752EBF22C700D6E9EC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				AA9819D22EC1BBDC00D1BCF0 /* XCRemoteSwiftPackageReference "kmp-sample-library" */,
+				AA9018B32EC43EF8007846FF /* XCRemoteSwiftPackageReference "kmp-sample-library" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AAB2BA7F2EBF22C700D6E9EC /* Products */;
@@ -561,20 +561,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AA9819D22EC1BBDC00D1BCF0 /* XCRemoteSwiftPackageReference "kmp-sample-library" */ = {
+		AA9018B32EC43EF8007846FF /* XCRemoteSwiftPackageReference "kmp-sample-library" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kei-1111/kmp-sample-library";
 			requirement = {
 				kind = exactVersion;
-				version = 1.4.3;
+				version = 1.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA9819D32EC1BBDC00D1BCF0 /* Shared */ = {
+		AA9018B42EC43EF8007846FF /* Shared */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AA9819D22EC1BBDC00D1BCF0 /* XCRemoteSwiftPackageReference "kmp-sample-library" */;
+			package = AA9018B32EC43EF8007846FF /* XCRemoteSwiftPackageReference "kmp-sample-library" */;
 			productName = Shared;
 		};
 /* End XCSwiftPackageProductDependency section */

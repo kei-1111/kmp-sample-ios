@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kei-1111/kmp-sample-library",
       "state" : {
-        "revision" : "9a2fa4d1161e31a72479bb5d0e029b5c5e30678a",
-        "version" : "1.4.3"
+        "revision" : "2215dc9bb7b0fa06d02bd612ba79c068b0fc72e4",
+        "version" : "1.5.0"
       }
     }
   ],
